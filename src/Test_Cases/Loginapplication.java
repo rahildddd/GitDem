@@ -25,6 +25,8 @@ public class Loginapplication {
 			rd.login().click();
 			
 			System.out.println(driver.getTitle());
+			System.out.println("web auotomation");
+			System.out.println("API AUtomation");
 		//Thread.sleep(50000);
 			//Facebook_Home dh=new Facebook_Home(driver);
 			//dh.search().sendKeys("Rahul");
