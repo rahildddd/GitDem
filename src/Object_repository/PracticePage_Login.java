@@ -1,5 +1,6 @@
 package Object_repository;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,10 +24,10 @@ public class PracticePage_Login {
 	WebElement password;
 	
 	@FindBy(id = "signInBtn")
-	WebElement signin;
+	By signin;
 	
 	public WebElement user()
 	{
-		driver.findElements(signin);
+		return driver.findElement(signin);
 	}
 }

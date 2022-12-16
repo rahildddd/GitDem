@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import Object_repository.Facebook_Home;
 import Object_repository.Facebook_login_page;
+import io.opentelemetry.exporter.logging.SystemOutLogExporter;
 
 public class Loginapplication {
 
@@ -17,17 +18,20 @@ public class Loginapplication {
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--disable-notifications");
 			WebDriver driver=new ChromeDriver(options);
-		/*	driver.get("https://www.facebook.com/login");
+			driver.get("https://www.facebook.com/login");
 			Facebook_login_page rd=new Facebook_login_page(driver);
 			rd.email().sendKeys("rahuldahikar18@gmail.com");
 			rd.password().sendKeys("Rahul@$1812");
 			rd.login().click();
-		Thread.sleep(5000);
-			Facebook_Home dh=new Facebook_Home(driver);
-			dh.search().sendKeys("Rahul");
 			
-	*/
-			driver.get("https://rahulshettyacademy.com/loginpagePractise/");
+			System.out.println(driver.getTitle());
+		//Thread.sleep(50000);
+			//Facebook_Home dh=new Facebook_Home(driver);
+			//dh.search().sendKeys("Rahul");
+			
+		
+	
+	//		driver.get("https://rahulshettyacademy.com/loginpagePractise/");
 			
 			
 			
