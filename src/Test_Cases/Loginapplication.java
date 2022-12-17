@@ -27,6 +27,7 @@ public class Loginapplication {
 			System.out.println(driver.getTitle());
 			System.out.println("web auotomation");
 			System.out.println("API AUtomation");
+			System.out.println("new branch inserted in rahul");
 		//Thread.sleep(50000);
 			//Facebook_Home dh=new Facebook_Home(driver);
 			//dh.search().sendKeys("Rahul");
